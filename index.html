@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Registration Form</title>
+	</head>
+
+	<body>
+		<h1>Registration Form</h1>
+		<form action="./">
+			<fieldset>
+				<div>
+					<label for="firstName">First Name: *</label>
+					<input type="text" name="firstName" id="firstName" required />
+				</div>
+				<div>
+					<label for="lastName">Last Name: *</label>
+					<input type="text" name="lastName" id="lastName" required />
+				</div>
+				<div>
+					<label for="email">Email Address: *</label>
+					<input type="email" name="email" id="email" required />
+				</div>
+				<div>
+					<label for="password">Password: *</label>
+					<input type="password" name="password" id="password" required />
+				</div>
+				<div>
+					<label for="confirm-password">Confirm Password: *</label>
+					<input type="password" name="confirm-password" id="confirm-password" required />
+				</div>
+				<div>
+					<label for="birthday">Birthday:</label>
+					<input type="date" name="birthday" id="birthday" required />
+				</div>
+				<div>
+					<p>Gender identity:</p>
+					<input type="radio" name="gender" id="male" />
+					<label for="male">Male</label>
+					<input type="radio" name="gender" id="female" />
+					<label for="female">Female</label>
+					<input type="radio" name="gender" id="nonbinary" />
+					<label for="nonbinary">Non-Binary</label>
+					<input type="radio" name="gender" id="notanswer" />
+					<label for="notanswer">I prefet not to answer</label>
+				</div>
+				<div>
+					<label for="description">A short description about myself</label>
+					<textarea name="description" id="description" cols="40" rows="5"></textarea>
+				</div>
+				<div>
+					<label for="favlanguage">Favorite Language</label>
+					<select name="favlanguage" id="favlanguage">
+						<option value="python">Python</option>
+						<option value="c++">C++</option>
+						<option value="C#">C#</option>
+						<option value="java">Java</option>
+						<option value="javascript">JavaScript</option>
+					</select>
+				</div>
+				<div>
+					<input type="checkbox" name="offers" id="offers" />
+					<label for="offers">Yes, I would like to receive periodic email updates</label>
+				</div>
+				<div>
+					<button type="submit">Create Account</button>
+				</div>
+				<div>
+					<p>* Indicates a required field</p>
+				</div>
+			</fieldset>
+		</form>
+	</body>
+</html>
